@@ -60,11 +60,7 @@ class _BiodataState extends State<Biodata> {
           );
         }
       );
-      // ScaffoldMessenger.of(context).showSnackBar(
-      //   const SnackBar(
-      //     content: Text('Data belum lengkap!'),
-      //   ),
-      // );
+      
     } else {
       setState(() {
         sudahDisimpan = true;
@@ -113,13 +109,10 @@ class _BiodataState extends State<Biodata> {
             CircleAvatar(
               radius: 60,
               backgroundImage: const AssetImage('assets/foto.jpg'),
-              //   foto != null ? FileImage(foto!) : null,
-              // child: foto == null ? const Icon(Icons.person, size: 60) : null,
+
             ),
 
-            // ElevatedButton(onPressed: pilihFoto, 
-            //   child: const Text('Pilih Foto')
-            // ),
+
 
             // Nama
             TextField(
@@ -189,43 +182,8 @@ class _BiodataState extends State<Biodata> {
 
             const SizedBox(height: 20),
 
-            //nampilin data
-            // if (sudahDisimpan)
-            //   Column(
-            //     children: [
-            //       const Text(
-            //         'Data Mahasiswa',
-            //         style: TextStyle(
-            //           fontSize: 20,
-            //           fontWeight: FontWeight.bold,
-            //         ),
-            //       ),
-
-            //       const SizedBox(height: 10),
-
-            //       Image.asset(
-            //         'assets/foto.jpg',
-            //         width: 100,
-            //         height: 100,
-            //       ),
-
-            //       // if (foto != null)
-            //       //   Image.file(
-            //       //     foto!,
-            //       //     width: 100,
-            //       //     height: 100,
-            //       //   ),
-
-            //       // Text('Nama: ${nama.text}'),
-            //       // Text('NPM: ${npm.text}'),
-            //       // Text('Jurusan: ${jurusan.text}'),
-            //       // Text('Tempat Lahir: ${tempatLahir.text}'),
-            //       // Text(
-            //       //   'Tanggal Lahir: ${tanggalLahir.text}'
-            //       // ),
-            //     ],
-            //   )
             
+
           ],
         ),
       )
